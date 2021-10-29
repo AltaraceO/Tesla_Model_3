@@ -10,6 +10,10 @@
   font-family: "Gotham book";
   src: url(/fonts/GothamSSm-Book_Web.woff2);
 }
+@font-face {
+  font-family: "Gotham bold";
+  src: url(/fonts/GothamSSm-Bold_Web.woff2);
+}
 * {
   margin: 0;
   padding: 0;
@@ -34,27 +38,27 @@ body {
 }
 /* 1st page Nav */
 .nav {
-  position: fixed;
+  /* position: fixed; */
   padding: 0px 45px;
   width: 100%;
-  font-family: "Gotham book";
+  font-family: "Gotham bold";
   font-size: 14px;
 }
 .logo {
   display: inline-block;
-  position: relative;
+  position: fixed;
   width: 100px;
 }
 .nav .nav-mid {
   display: inline-block;
-  padding-left: 18%;
-  padding-top: 1.5%;
+  padding-left: 20%;
+  padding-top: 9px;
   position: absolute;
 }
 .nav .nav-right {
   display: inline-block;
-  padding-left: 70%;
-  padding-top: 1.5%;
+  padding-left: 75%;
+  padding-top: 9px;
   position: absolute;
 }
 
@@ -64,7 +68,14 @@ button {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  padding-right: 15px;
+  padding: 8px 17px;
+}
+
+button:hover {
+  border: none;
+  background-color: #757885;
+
+  border-radius: 45px;
 }
 
 a {
@@ -76,6 +87,6 @@ a {
 h1 {
   text-align: center;
   font-family: "Gotham book";
-  padding-top: 170px;
+  padding-top: 140px;
   font-size: 40px;
 }
