@@ -106,7 +106,7 @@ p {
 /* Stats bar - ORDER NOW */
 
 .stats {
-  height: 10;
+  /* height: 50px; */
   text-align: center;
   color: white;
   font-family: "Gotham light";
@@ -115,30 +115,29 @@ p {
   float: left; /*makes them go horizontal*/
   width: 60%;
   text-align: center;
-  /* border: solid 5px white; */
-}
-.main--li {
-  display: inline;
-  padding: 5px 30px;
+
+  /* border: solid 5px rgb(14, 8, 8); */
 }
 .stats__main {
   float: right;
-  list-style: none;
   font-size: 28px;
-  line-height: 36px;
   font-family: "Gotham";
+  /* border: solid 5px rgb(228, 211, 211); */
+}
+.main--li {
+  list-style: none;
+  float: left;
+  padding: 5px 30px;
+  /* border: solid 5px rgb(156, 118, 228); */
+}
+.top-li {
+  list-style: none;
+  padding-bottom: 10px;
 }
 
 .sub--li {
-  display: inline;
-  padding: 5px 30px;
-}
-
-.stats__sub {
-  float: right;
   list-style: none;
   font-size: 12px;
-  line-height: 18px;
 }
 
 .box-two {
@@ -151,13 +150,14 @@ p {
 .OrderNow {
   float: left;
   font-size: 12px;
-  line-height: 14px;
-  padding: 12px 40px;
+  padding: 15px 40px;
   border: solid white 5px;
   border-radius: 15em;
   border-width: 5px;
-
   background: transparent;
+  position: absolute;
+  top: 10%;
+  left: 5%;
 }
 
 .OrderNow:hover {
@@ -177,12 +177,16 @@ p {
 }
 
 .arrow {
-  height: 12%;
+  position: relative;
+  height: 5%;
   text-align: center;
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
-.fas fa-chevron-down {
-  text-align: center;
+.chevron {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
 }
 /* second page */
 
